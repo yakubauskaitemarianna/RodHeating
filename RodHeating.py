@@ -1,6 +1,15 @@
 from sympy import *
 from mpmath import plot
 
+# [x0, x1] - function implements on the interval
+# q - Polinomials maximum degree for choosing Galerkin method basis
+# 0th degree basis function is fixed to the initial value
+# ode - ordinary differential equation
+# x - function argument
+# u0 - initiak value
+
+# Assume that the solution can be approximated as a linear combination of the basis functions
+
 def galerkin(ode, x, x0, x1, u0, q):
     basis = [x**k for k in range(q+1)]
     # Coefficients for the basis monomials
