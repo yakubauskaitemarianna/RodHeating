@@ -6,7 +6,7 @@ from mpmath import plot
 # 0th degree basis function is fixed to the initial value
 # ode - ordinary differential equation
 # x - function argument
-# u0 - initiak value
+# u0 - initial value
 
 # Assume that the solution can be approximated as a linear combination of the basis functions
 
